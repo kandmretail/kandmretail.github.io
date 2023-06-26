@@ -1,92 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>K and M Retail</title>
-    <style>
-        /* Add your custom CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        nav {
-            background-color: #555;
-            color: #fff;
-            padding: 10px;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 5px;
-        }
-        
-        main {
-            padding: 20px;
-        }
-        
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Retail Store</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to K & M Retail</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <main>
-        <h2>About Us</h2>
-        <p>Welcome to K & M Retail! We offer a wide range of products to suit your needs.</p>
-        
-        <h2>Products</h2>
-        <ul>
-            <li>Product 1</li>
-            <li>Product 2</li>
-            <li>Product 3</li>
-            <!-- Add more product items as needed -->
-        </ul>
-        
-        <h2>Contact Us</h2>
-        <p>You can reach us at:</p>
-        <p>Address: LaGrange,GA 30241</p>
-        <p>Phone: 706-132-4567</p>
-        <p>Email: kandmretailmerchandise@gmail.com</p>
-    </main>
-    
-    <footer>
-        &copy; 2023 K & M Retail. All rights reserved.
-    </footer>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Page -->
+  <div id="home">
+    <h1>Welcome to My Retail Store</h1>
+    <p>We offer a wide range of products for all your needs.</p>
+  </div>
+
+  <!-- Products Page -->
+  <div id="products">
+    <h2>Products</h2>
+    <div class="product">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Description of product 1.</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Description of product 2.</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Cart Page -->
+  <div id="cart">
+    <h2>Cart</h2>
+    <div class="cart-item">
+      <img src="product1.jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <p>Price: $19.99</p>
+    </div>
+    <div class="cart-item">
+      <img src="product2.jpg" alt="Product 2">
+      <h3>Product 2</h3>
+      <p>Price: $29.99</p>
+    </div>
+    <p>Total: $49.98</p>
+    <button>Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
