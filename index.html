@@ -3,58 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Retail Store</title>
+  <title>K & M Retail</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="cart.html">Cart</a></li>
-    </ul>
+    <div class="container">
+      <h1 class="logo">K & M Retail</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- Home Page -->
-  <div id="home">
-    <h1>Welcome K & M Retail</h1>
-    <p>We offer a wide range of products for all your needs.</p>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to K & M Retail</h2>
+      <p>We offer a wide range of products for all your needs.</p>
+      <a href="products.html" class="btn">Shop Now</a>
+    </div>
+  </section>
 
-  <!-- Products Page -->
-  <div id="products">
-    <h2>Products</h2>
-    <div class="product">
-      <img src="product1.jpg" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>Description of product 1.</p>
-      <button>Add to Cart</button>
+  <!-- Featured Products -->
+  <section class="featured-products">
+    <div class="container">
+      <h3>Featured Products</h3>
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h4>Product 1</h4>
+        <p>Description of product 1.</p>
+        <span class="price">$19.99</span>
+        <a href="cart.html" class="btn">Add to Cart</a>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h4>Product 2</h4>
+        <p>Description of product 2.</p>
+        <span class="price">$29.99</span>
+        <a href="cart.html" class="btn">Add to Cart</a>
+      </div>
     </div>
-    <div class="product">
-      <img src="product2.jpg" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>Description of product 2.</p>
-      <button>Add to Cart</button>
-    </div>
-  </div>
-
-  <!-- Cart Page -->
-  <div id="cart">
-    <h2>Cart</h2>
-    <div class="cart-item">
-      <img src="product1.jpg" alt="Product 1">
-      <h3>Product 1</h3>
-      <p>Price: $18.99</p>
-    </div>
-    <div class="cart-item">
-      <img src="product2.jpg" alt="Product 2">
-      <h3>Product 2</h3>
-      <p>Price: $29.99</p>
-    </div>
-    <p>Total: $49.98</p>
-    <button>Checkout</button>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
